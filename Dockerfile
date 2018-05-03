@@ -4,7 +4,7 @@ COPY package.json .
 RUN npm install
 COPY . .
 
-ENV PUBLIC_URL https://react-konzertportal-homepage.herokuapp.com
+ENV PUBLIC_URL https://react-konzertportal-homepage.herokuapp.com/concerts
 
 RUN npm run build
 RUN npm run transpile
